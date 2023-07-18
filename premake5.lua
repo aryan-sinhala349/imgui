@@ -21,11 +21,11 @@ project "ImGui"
 		"imgui_demo.cpp"
 	}
 
-	filter "system:windows"
+    filter "options:target=windows"
 		systemversion "latest"
 		cppdialect "C++17"
 
-	filter "system:linux"
+    filter "options:target=linux"
 		pic "On"
 		systemversion "latest"
 		cppdialect "C++17"
